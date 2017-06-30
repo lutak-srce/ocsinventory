@@ -1,0 +1,3 @@
+---
+ocsinventory::agent::support_packages: 
+  - 'libcrypt-ssleay-perl'
