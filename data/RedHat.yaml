@@ -1,5 +1,3 @@
 ocsinventory::agent::package_name: 'ocsinventory-agent'
 ocsinventory::agent::support_packages: 
   - 'perl-LWP-Protocol-https'
-ocsinventory::agent::ocsinventory_conf_file: '/etc/sysconfig/ocsinventory-agent'
-ocsinventory::agent::ocsinventory_conf_epp: 'ocsinventory/ocsinventory-agent.epp'
