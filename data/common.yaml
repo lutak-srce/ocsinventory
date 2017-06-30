@@ -1,0 +1,14 @@
+---
+ocsinventory::agent::package_ensure: 'present'
+ocsinventory::agent::package_name: 'ocsinventory-agent-srce'
+ocsinventory::agent::support_packages: 
+  - 'liblwp-protocol-https-perl'
+ocsinventory::agent::support_packages_ensure: 'present'
+ocsinventory::agent::server: 'localhost'
+ocsinventory::agent::pause: 0
+ocsinventory::agent::ocsinventory_conf_file: '/etc/ocsinventory/ocsinventory-agent.cfg'
+ocsinventory::agent::ocsinventory_conf_epp: 'ocsinventory/ocsinventory-agent.cfg.epp'
+ocsinventory::agent::ocsinventory_conf_ensure: 'present'
+ocsinventory::agent::ocsinventory_conf_owner: 'root'
+ocsinventory::agent::ocsinventory_conf_group: 'root'
+ocsinventory::agent::ocsinventory_conf_mode: '0644'

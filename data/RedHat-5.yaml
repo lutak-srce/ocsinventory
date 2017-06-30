@@ -1,0 +1,2 @@
+ocsinventory::agent::support_packages: 
+  - 'perl-Crypt-SSLeay'
