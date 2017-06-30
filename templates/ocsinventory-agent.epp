@@ -9,7 +9,7 @@
 PATH=/sbin:/bin:/usr/sbin:/usr/bin
 
 # Mode, change to "cron" to activate
-OCSMODE[0]=cron
+OCSMODE[0]=<%= $::ocsinventory::agent::ocsmode %>
 
 OCSSERVER[0]=<%= $::ocsinventory::agent::server %>
 
@@ -20,7 +20,7 @@ OCSSERVER[0]=<%= $::ocsinventory::agent::server %>
 # OCSSERVER[0]=local
 
 # Wait before inventory 
-OCSPAUSE[0]=<%= $::ocsinventory::agent::pause %>
+OCSPAUSE[0]=<%= $::ocsinventory::agent::ocspause %>
 
 # Administrative TAG (optional, must be filed before first inventory)
-OCSTAG[0]=
+OCSTAG[0]=<%= $::ocsinventory::agent::ocstag %>
