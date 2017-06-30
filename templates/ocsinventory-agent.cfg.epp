@@ -1,3 +1,12 @@
 # This file is being maintained by Puppet.
 # DO NOT EDIT
+
+# OCS Inventory "Unix Unified Agent" Configuration File #
+
+# Server URL, unconmment if needed
+
 server=<%= $::ocsinventory::agent::server %>
+
+# How to log, can be File,Stderr,Syslog
+logger = file
+logfile = /var/log/ocsinventory-agent/ocsinventory-agent.log
