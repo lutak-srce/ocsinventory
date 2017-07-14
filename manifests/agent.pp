@@ -13,6 +13,7 @@ class ocsinventory::agent (
   String                         $ocsinventory_conf_group,
   String                         $ocsinventory_conf_mode,
   String                         $ocsinventory_conf_epp,
+  Optional[Stdlib::Absolutepath] $ocsinventory_logfile,
   Optional[Stdlib::Absolutepath] $ocsinventory_sysconfig_file,
   Optional[String]               $ocsinventory_sysconfig_ensure,
   Optional[String]               $ocsinventory_sysconfig_owner,

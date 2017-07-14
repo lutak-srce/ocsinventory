@@ -8,6 +8,7 @@ ocsinventory::agent::server: 'localhost'
 ocsinventory::agent::ocsmode: 'cron'
 ocsinventory::agent::ocstag: ''
 ocsinventory::agent::ocspause: 0
+ocsinventory::agent::ocsinventory_logfile: '/var/log/ocsinventory-agent/ocsinventory-agent.log'
 ocsinventory::agent::ocsinventory_conf_file: '/etc/ocsinventory/ocsinventory-agent.cfg'
 ocsinventory::agent::ocsinventory_conf_epp: 'ocsinventory/ocsinventory-agent.cfg.epp'
 ocsinventory::agent::ocsinventory_conf_ensure: 'present'
