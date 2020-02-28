@@ -1,5 +1,5 @@
 {
-  "name": "ocsinventory",
+  "name": "ocsinventory-agent",
   "version": "0.1.0",
   "author": "puppet-admin@srce.hr",
   "summary": "ocsinventory agent pupet module",
