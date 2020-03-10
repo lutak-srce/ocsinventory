@@ -1,0 +1,18 @@
+# This file is being maintained by Puppet.
+# DO NOT EDIT
+
+# OCS Inventory "Unix Unified Agent" Configuration File #
+
+# Server URL, unconmment if needed
+
+server=<%= $::ocsinventory::agent::server %>
+
+# How to log, can be File,Stderr,Syslog
+logger = file
+logfile = <%= $::ocsinventory::agent::ocsinventory_logfile %>
+<% if $operatingsystem == 'CentOS' and $operatingsystemmajrelease == '8' {-%>
+ca = /etc/pki/tls/certs/ca-bundle.crt
+<% } -%>
+<% if $operatingsystem == 'Debian' and $operatingsystemmajrelease == '10' {-%>
+ca = /etc/ssl/certs/ca-certificates.crt
+<% } -%>
