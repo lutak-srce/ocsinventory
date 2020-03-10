@@ -38,6 +38,7 @@ class ocsinventory::agent (
   }
 
   case $facts['os']['family'] {
+    default : { }
     'RedHat' : {
       file { $::ocsinventory::agent::ocsinventory_sysconfig_file:
         ensure  => $::ocsinventory::agent::ocsinventory_sysconfig_ensure,
@@ -49,5 +50,4 @@ class ocsinventory::agent (
       }
     }
   }
-
 }
