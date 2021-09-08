@@ -13,6 +13,6 @@ logfile = <%= $::ocsinventory::agent::ocsinventory_logfile %>
 <% if $operatingsystem == 'CentOS' and $operatingsystemmajrelease == '8' {-%>
 ca = /etc/pki/tls/certs/ca-bundle.crt
 <% } -%>
-<% if $operatingsystem == 'Debian' and $operatingsystemmajrelease == '10' {-%>
+<% if $operatingsystem == 'Debian' and $operatingsystemmajrelease == '10' or $operatingsystem == 'Debian' and $operatingsystemmajrelease == '11' {-%>
 ca = /etc/ssl/certs/ca-certificates.crt
 <% } -%>
