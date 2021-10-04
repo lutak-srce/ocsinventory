@@ -1,0 +1,2 @@
+---
+ocsinventory::agent::ocsinventory_logfile: '/var/log/ocsinventory-agent/ocsinventory-agent.log'
