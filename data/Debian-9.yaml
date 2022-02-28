@@ -1,4 +1,0 @@
----
-ocsinventory::agent::ocsinventory_logfile: '/var/log/ocsinventory-client/ocsinventory-agent.log'
-ocsinventory::agent::support_packages:
-  - 'net-tools'

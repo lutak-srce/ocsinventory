@@ -39,6 +39,12 @@ class ocsinventory::agent (
 
   case $facts['os']['family'] {
     default : { }
+    'Debian' : {
+      file { '/var/log/ocsinventory-agent/':
+        ensure  => directory,
+        require => Package[$::ocsinventory::agent::package_name],
+      }
+    }
     'RedHat' : {
       file { $::ocsinventory::agent::ocsinventory_sysconfig_file:
         ensure  => $::ocsinventory::agent::ocsinventory_sysconfig_ensure,
