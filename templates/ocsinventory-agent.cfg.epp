@@ -10,7 +10,7 @@ server=<%= $::ocsinventory::agent::server %>
 # How to log, can be File,Stderr,Syslog
 logger = file
 logfile = <%= $::ocsinventory::agent::ocsinventory_logfile %>
-<% if $osfamily == 'RedHat' and $operatingsystemmajrelease == '8' {-%>
+<% if $osfamily == 'RedHat' and $operatingsystemmajrelease >= 7 {-%>
 ca = /etc/pki/tls/certs/ca-bundle.crt
 <% } -%>
 <% if $operatingsystem == 'Debian' and $operatingsystemmajrelease == '10' or $operatingsystem == 'Debian' and $operatingsystemmajrelease == '11' {-%>
